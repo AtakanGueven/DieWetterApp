@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wetter App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <div class="weather-app">
+            <div class="header">
+                <h1>Wetter App</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="city-input" placeholder="Stadt eingeben...">
+                <button id="search-btn">🔍</button>
+            </div>
+            <div class="weather-display" id="weather-info">
+                <div class="city-name">
+                    <h2 id="city-name">Stadtname</h2>
+                </div>
+                <div class="weather-details">
+                    <img id="weather-icon" src="" alt="Wetter Icon">
+                    <div class="weather-data">
+                        <p id="weather-description">Wetterbeschreibung</p>
+                        <p id="temperature">--°C</p>
+                        <p id="humidity">Luftfeuchtigkeit: --%</p>
+                        <p id="wind-speed">Windgeschwindigkeit: -- km/h</p>
+                        <p id="rain-chance">Regenwahrscheinlichkeit: --%</p>
+                    </div>
+                </div>
+                <div class="forecast">
+                    <h3>7-Tage-Vorhersage</h3>
+                    <div id="forecast-container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
